@@ -1,8 +1,8 @@
 const express = require('express');
 
-const User = require('../controllers/usersController');
-const userValidation = require('./userValidation');
-const { validateJWT } = require('./auth/tokenValidation');
+const User = require('../../controllers/usersController');
+const userValidation = require('../auth/userValidation');
+const { validateJWT } = require('../auth/tokenValidation');
 
 const router = express.Router();
 

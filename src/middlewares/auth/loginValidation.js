@@ -1,6 +1,6 @@
 // requisito 3
 
-const loginData = require('../schemas/loginValidation');
+const loginData = require('../../schemas/loginValidation');
 
 function loginValidation(req, res, next) {
   const { error } = loginData.validate(req.body);

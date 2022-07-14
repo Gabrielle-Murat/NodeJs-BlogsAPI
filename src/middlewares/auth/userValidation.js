@@ -1,6 +1,6 @@
 // requisito 4
 
-const userData = require('../schemas/userValidation');
+const userData = require('../../schemas/userValidation');
 
 function userValidation(req, res, next) {
   const { error } = userData.validate(req.body);

@@ -1,8 +1,8 @@
 const express = require('express');
 
-const loginRouter = require('./middlewares/loginRouter');
-const usersRouter = require('./middlewares/usersRouter');
-const categoriesRouter = require('./middlewares/categoriesRouter');
+const loginRouter = require('./middlewares/routers/loginRouter');
+const usersRouter = require('./middlewares/routers/usersRouter');
+const categoriesRouter = require('./middlewares/routers/categoriesRouter');
 
 const app = express();
 
