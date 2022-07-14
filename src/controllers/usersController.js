@@ -1,5 +1,7 @@
 const User = require('../services/usersService');
 
+// requisito 4
+
 const createUser = async (req, res) => {
   const { displayName, email, password, image } = req.body;
 
