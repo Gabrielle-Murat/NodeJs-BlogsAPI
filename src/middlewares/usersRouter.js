@@ -12,4 +12,7 @@ router.post('/', userValidation, User.createUser);
 // requisito 5
 router.get('/', validateJWT, User.getUsers);
 
+// requisito 6
+router.get('/:id', validateJWT, User.getUserById);
+
 module.exports = router;
