@@ -14,6 +14,17 @@ const createUser = async (req, res) => {
   return res.status(201).json({ token: response });
 };
 
+// requisito 5
+
+const getUsers = async (_req, res) => {
+  const users = await User.getUsers();
+
+  if (!users) return res.status(500).json({ message: 'Something went wrong' });
+
+  return res.status(200).json(users);
+};
+
 module.exports = {
   createUser,
+  getUsers,
 };
