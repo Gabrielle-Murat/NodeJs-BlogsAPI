@@ -19,4 +19,7 @@ router.get('/:id', validateJWT, BlogPost.getBlogPostById);
 // requisito 15
 router.put('/:id', validateJWT, blogPostUpdateValidation, BlogPost.updateBlogPost);
 
+// requisito 16
+router.delete('/:id', validateJWT, BlogPost.deleteBlogPost);
+
 module.exports = router;
