@@ -56,10 +56,27 @@ const updateBlogPost = async (req, res) => {
 
   const response = await BlogPost.updateBlogPost(id, title, content, userId);
 
-  if (response === 'post invalid') return res.status(401).json({ message: 'Post not found' });
+  if (response === 'post invalid') return res.status(404).json({ message: 'Post not found' });
   if (response === 'user invalid') return res.status(401).json({ message: 'Unauthorized user' });
 
   return res.status(200).json(response);
+};
+
+// requisito 16
+
+const deleteBlogPost = async (req, res) => {
+  const { id } = req.params;
+
+  const token = req.headers.authorization;
+  const decoded = jwt.verify(token, secret);
+  const userId = decoded.data.id;
+
+  const response = await BlogPost.deleteBlogPost(id, userId);
+
+  if (response === 'post invalid') return res.status(404).json({ message: 'Post does not exist' });
+  if (response === 'user invalid') return res.status(401).json({ message: 'Unauthorized user' });
+
+  return res.status(204).end();
 };
 
 module.exports = {
@@ -67,4 +84,5 @@ module.exports = {
   getBlogPosts,
   getBlogPostById,
   updateBlogPost,
+  deleteBlogPost,
 };
