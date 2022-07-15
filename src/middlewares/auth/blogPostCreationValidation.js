@@ -1,8 +1,8 @@
 // requisito 12
 
-const blogPostData = require('../../schemas/blogPostValidation');
+const blogPostData = require('../../schemas/blogPostCreationValidation');
 
-function blogPostValidation(req, res, next) {
+function blogPostCreationValidation(req, res, next) {
   const { error } = blogPostData.validate(req.body);
 
   if (error) {
@@ -13,4 +13,4 @@ function blogPostValidation(req, res, next) {
   return next();
 }
 
-module.exports = blogPostValidation;
+module.exports = blogPostCreationValidation;
