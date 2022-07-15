@@ -79,10 +79,21 @@ const deleteBlogPost = async (req, res) => {
   return res.status(204).end();
 };
 
+// requisito 18
+
+const getBlogPostByTerm = async (req, res) => {
+  const { q: queryTerm } = req.query;
+
+  const response = await BlogPost.getBlogPostByTerm(queryTerm);
+
+  return res.status(200).json(response);
+};
+
 module.exports = {
   createBlogPost,
   getBlogPosts,
   getBlogPostById,
   updateBlogPost,
   deleteBlogPost,
+  getBlogPostByTerm,
 };
