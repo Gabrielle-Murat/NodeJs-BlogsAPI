@@ -1,5 +1,6 @@
 // requisito 12
 
+const { Op } = require('sequelize');
 const { BlogPost, Category, PostCategory, User } = require('../database/models');
 
 const createBlogPost = async (title, content, categoryIds, userId) => {
@@ -95,10 +96,32 @@ const deleteBlogPost = async (id, userId) => {
   await BlogPost.destroy({ where: { id } });
 };
 
+// requisito 18
+
+const getBlogPostByTerm = async (queryTerm) => {
+  const response = BlogPost.findAll({
+    where: {
+      [Op.or]: [
+        { title: { [Op.substring]: queryTerm } },
+        { content: { [Op.substring]: queryTerm } },
+      ],
+    },
+    include: [
+      { model: User, as: 'user', attributes: { exclude: ['password'] } },
+      { model: Category, as: 'categories', through: { attributes: [] } },
+    ],
+  });
+  
+  if (!response) return [];
+
+  return response;
+};
+
 module.exports = {
   createBlogPost,
   getBlogPosts,
   getBlogPostById,
   updateBlogPost,
   deleteBlogPost,
+  getBlogPostByTerm,
 };
