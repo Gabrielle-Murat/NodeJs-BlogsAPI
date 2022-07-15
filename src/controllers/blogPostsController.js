@@ -4,6 +4,8 @@ const BlogPost = require('../services/blogPostsService');
 
 const secret = process.env.JWT_SECRET;
 
+// requisito 12
+
 const createBlogPost = async (req, res) => {
   const { title, content, categoryIds } = req.body;
 
@@ -20,6 +22,17 @@ const createBlogPost = async (req, res) => {
   return res.status(201).json(response);
 };
 
+// requisito 13
+
+const getBlogPosts = async (_req, res) => {
+  const response = await BlogPost.getBlogPosts();
+
+  if (!response) return res.status(500).json({ message: 'Something went wrong' });
+
+  return res.status(200).json(response);
+};
+
 module.exports = {
   createBlogPost,
+  getBlogPosts,
 };
