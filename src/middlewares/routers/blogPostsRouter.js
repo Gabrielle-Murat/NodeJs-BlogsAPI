@@ -12,4 +12,7 @@ router.post('/', blogPostValidation, validateJWT, BlogPost.createBlogPost);
 // requisito 13
 router.get('/', validateJWT, BlogPost.getBlogPosts);
 
+// requisito 14
+router.get('/:id', validateJWT, BlogPost.getBlogPostById);
+
 module.exports = router;
