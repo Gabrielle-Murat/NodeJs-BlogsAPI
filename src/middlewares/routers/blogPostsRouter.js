@@ -7,6 +7,9 @@ const { validateJWT } = require('../auth/tokenValidation');
 
 const router = express.Router();
 
+// requisito 18
+router.get('/search', validateJWT, BlogPost.getBlogPostByTerm);
+
 // requisito 12
 router.post('/', blogPostCreationValidation, validateJWT, BlogPost.createBlogPost);
 
