@@ -32,7 +32,20 @@ const getBlogPosts = async (_req, res) => {
   return res.status(200).json(response);
 };
 
+// requisito 14
+
+const getBlogPostById = async (req, res) => {
+  const { id } = req.params;
+
+  const response = await BlogPost.getBlogPostById(id);
+
+  if (!response) return res.status(404).json({ message: 'Post does not exist' });
+
+  return res.status(200).json(response);
+};
+
 module.exports = {
   createBlogPost,
   getBlogPosts,
+  getBlogPostById,
 };
