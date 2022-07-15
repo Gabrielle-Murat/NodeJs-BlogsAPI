@@ -66,7 +66,7 @@ const getBlogPostById = async (id) => {
 const updateBlogPost = async (id, title, content, userId) => {
   const postById = await BlogPost.findByPk(id);
 
-  if (!id) return 'post invalid';
+  if (!postById) return 'post invalid';
   if (postById.userId !== userId) return 'user invalid';
 
   const [updatePost] = await BlogPost.update(
@@ -84,9 +84,21 @@ const updateBlogPost = async (id, title, content, userId) => {
   return updatedPost;
 };
 
+// requisito 16
+
+const deleteBlogPost = async (id, userId) => {
+  const postById = await BlogPost.findByPk(id);
+
+  if (!postById) return 'post invalid';
+  if (postById.userId !== userId) return 'user invalid';
+
+  await BlogPost.destroy({ where: { id } });
+};
+
 module.exports = {
   createBlogPost,
   getBlogPosts,
   getBlogPostById,
   updateBlogPost,
+  deleteBlogPost,
 };
