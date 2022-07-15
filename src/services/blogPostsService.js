@@ -61,8 +61,32 @@ const getBlogPostById = async (id) => {
   return postById;
 };
 
+// requisito 15
+
+const updateBlogPost = async (id, title, content, userId) => {
+  const postById = await BlogPost.findByPk(id);
+
+  if (!id) return 'post invalid';
+  if (postById.userId !== userId) return 'user invalid';
+
+  const [updatePost] = await BlogPost.update(
+    { title, content }, { where: { id } },
+  );
+
+  const updatedPost = await BlogPost.findOne({
+    where: updatePost,
+    include: [
+      { model: User, as: 'user', attributes: { exclude: ['password'] } },
+      { model: Category, as: 'categories', through: { attributes: [] } },
+    ],
+  });
+
+  return updatedPost;
+};
+
 module.exports = {
   createBlogPost,
   getBlogPosts,
   getBlogPostById,
+  updateBlogPost,
 };
