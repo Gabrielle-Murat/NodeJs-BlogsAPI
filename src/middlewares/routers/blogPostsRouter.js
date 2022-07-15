@@ -10,4 +10,6 @@ const router = express.Router();
 
 router.post('/', blogPostValidation, validateJWT, BlogPost.createBlogPost);
 
+router.get('/', validateJWT, BlogPost.getBlogPosts);
+
 module.exports = router;
