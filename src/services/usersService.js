@@ -43,8 +43,19 @@ const getUserById = async (id) => {
   return user;
 };
 
+// requisito 17
+
+const deleteUser = async (id) => {
+  const user = await User.findByPk(id);
+
+  if (!user) return 'user not found';
+
+  await User.destroy({ where: { id } });
+};
+
 module.exports = {
   createUser,
   getUsers,
   getUserById,
+  deleteUser,
 };
