@@ -15,4 +15,7 @@ router.get('/', validateJWT, User.getUsers);
 // requisito 6
 router.get('/:id', validateJWT, User.getUserById);
 
+// requisito 17
+router.delete('/me', validateJWT, User.deleteUser);
+
 module.exports = router;
