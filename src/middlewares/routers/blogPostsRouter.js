@@ -1,5 +1,3 @@
-// requisito 12
-
 const express = require('express');
 
 const BlogPost = require('../../controllers/blogPostsController');
@@ -8,8 +6,10 @@ const { validateJWT } = require('../auth/tokenValidation');
 
 const router = express.Router();
 
+// requisito 12
 router.post('/', blogPostValidation, validateJWT, BlogPost.createBlogPost);
 
+// requisito 13
 router.get('/', validateJWT, BlogPost.getBlogPosts);
 
 module.exports = router;
