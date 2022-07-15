@@ -1,4 +1,8 @@
+const jwt = require('jsonwebtoken');
+require('dotenv').config();
 const User = require('../services/usersService');
+
+const secret = process.env.JWT_SECRET;
 
 // requisito 4
 
@@ -36,8 +40,23 @@ const getUserById = async (req, res) => {
   return res.status(200).json(user);
 };
 
+// requisito 17
+
+const deleteUser = async (req, res) => {
+  const token = req.headers.authorization;
+  const decoded = jwt.verify(token, secret);
+  const userId = decoded.data.id;
+
+  const response = await User.deleteUser(userId);
+
+  if (response === 'user not found') return res.status(404).json({ message: 'User not found' });
+
+  return res.status(204).end();
+};
+
 module.exports = {
   createUser,
   getUsers,
   getUserById,
+  deleteUser,
 };
