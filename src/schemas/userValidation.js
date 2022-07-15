@@ -31,9 +31,9 @@ module.exports = Joi.object({
     }),
 
   image: Joi.string()
-    .required()
+    // .required()
     .messages({
-      'string.empty': '400|"image" is required',
+      // 'string.empty': '400|"image" is required',
       'string.base': '422|Invalid format',
     }),
 });
