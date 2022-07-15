@@ -38,7 +38,31 @@ const getBlogPosts = async () => {
   return posts;
 };
 
+// requisito 14
+
+const getBlogPostById = async (id) => {
+  const postById = await BlogPost.findOne({
+    where: { id },
+    include: [
+      {
+        model: User,
+        as: 'user',
+        attributes: { exclude: ['password'] },
+      },
+      {
+        model: Category,
+        as: 'categories',
+        through: { attributes: [] },
+      },
+    ],
+  });
+
+  if (!postById) return null;
+  return postById;
+};
+
 module.exports = {
   createBlogPost,
   getBlogPosts,
+  getBlogPostById,
 };
