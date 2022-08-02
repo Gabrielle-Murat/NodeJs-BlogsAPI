@@ -21,26 +21,24 @@
     <li><a href="#descrição-do-projeto"> ➤ Descrição do projeto</a></li>
     <li><a href="#instruções"> ➤ Instruções</a></li>
     <li><a href="#requisitos"> ➤ Requisitos realizados </a></li>
-    <li><a href="#requisito1"> ➤ Requisito 1:  </a></li>
-    <li><a href="#requisito2"> ➤ Requisito 2:  </a></li>
-    <li><a href="#requisito3"> ➤ Requisito 3:  </a></li>
-    <li><a href="#requisito4"> ➤ Requisito 4:  </a></li>
-    <li><a href="#requisito5"> ➤ Requisito 5:  </a></li>
-    <li><a href="#requisito6"> ➤ Requisito 6:  </a></li>
-    <li><a href="#requisito7"> ➤ Requisito 7:  </a></li>
-    <li><a href="#requisito8"> ➤ Requisito 8:  </a></li>
-    <li><a href="#requisito9"> ➤ Requisito 9:  </a></li>
-    <li><a href="#requisito10"> ➤ Requisito 10:  </a></li>
-    <li><a href="#requisito11"> ➤ Requisito 11:  </a></li>
-    <li><a href="#requisito12"> ➤ Requisito 12:  </a></li>
-    <li><a href="#requisito13"> ➤ Requisito 13:  </a></li>
-    <li><a href="#requisito14"> ➤ Requisito 14:  </a></li>
-    <li><a href="#requisito15"> ➤ Requisito 15:  </a></li>
-    <li><a href="#requisito16"> ➤ Requisito 16:  </a></li>
-    <li><a href="#requisito17"> ➤ Requisito 17:  </a></li>
-    <li><a href="#requisito18"> ➤ Requisito 18:  </a></li>
-    <li><a href="#requisito19"> ➤ Requisito 19:  </a></li>
-    <li><a href="#requisito20"> ➤ Requisito 20:  </a></li>
+    <li><a href="#requisito1"> ➤ Requisito 1: Criação de migrations para as entidades relacionais </a></li>
+    <li><a href="#requisito2"> ➤ Requisito 2: Criação do model de usuário </a></li>
+    <li><a href="#requisito3"> ➤ Requisito 3: Criação do endpoint POST `/login` </a></li>
+    <li><a href="#requisito4"> ➤ Requisito 4: Criação do endpoint POST `/user` </a></li>
+    <li><a href="#requisito5"> ➤ Requisito 5: Criação do endpoint GET `/user` </a></li>
+    <li><a href="#requisito6"> ➤ Requisito 6: Criação do endpoint GET `/user/:id` </a></li>
+    <li><a href="#requisito7"> ➤ Requisito 7: Criação do model de categoria </a></li>
+    <li><a href="#requisito8"> ➤ Requisito 8: Criação do endpoint POST `/categories` </a></li>
+    <li><a href="#requisito9"> ➤ Requisito 9: Criação do endpoint GET `/categories` </a></li>
+    <li><a href="#requisito10"> ➤ Requisito 10: Criação do model de blogpost </a></li>
+    <li><a href="#requisito11"> ➤ Requisito 11: Criação do model de postcategory </a></li>
+    <li><a href="#requisito12"> ➤ Requisito 12: Criação do endpoint POST `/post` </a></li>
+    <li><a href="#requisito13"> ➤ Requisito 13: Criação do endpoint GET `/post` </a></li>
+    <li><a href="#requisito14"> ➤ Requisito 14: Criação do endpoint GET `/post/:id` </a></li>
+    <li><a href="#requisito15"> ➤ Requisito 15: Criação do endpoint PUT `/post/:id` </a></li>
+    <li><a href="#requisito16"> ➤ Requisito 16: Criação do endpoint DELETE `/post/:id` </a></li>
+    <li><a href="#requisito17"> ➤ Requisito 17: Criação do endpoint DELETE `/user/me` </a></li>
+    <li><a href="#requisito18"> ➤ Requisito 18: Criação do endpoint GET `/post/search` </a></li>
     <li><a href="#créditos"> ➤ Créditos </a></li>
   </ol>
 </details>
@@ -135,21 +133,21 @@
 <h2 id="requisitos"> :woman_technologist: Requisitos Realizados:</h2>
 
 <details open="open">
-  <summary>Criação de :</summary>
+  <summary>Criação de API para Blog:</summary>
 
-  <h4 id="requisito1">Requisito 1: Criação </h4>
+  <h4 id="requisito1">Requisito 1: Criação de migrations para as entidades relacionais </h4>
   
     1. Criar um :
       1.1. 
       1.2. 
 
-  <h4 id="requisito2">Requisito 2: Criação </h4>
+  <h4 id="requisito2">Requisito 2: Criação do model de usuário </h4>
   
     2. Criar um :
       2.1. 
       2.2. 
 
-  <h4 id="requisito3">Requisito 3: Criação </h4>
+  <h4 id="requisito3">Requisito 3: Criação do endpoint POST `/login` </h4>
   
     3. Criar um :
       3.1. 
@@ -157,14 +155,14 @@
       3.3. 
       3.4. 
 
-  <h4 id="requisito4">Requisito 4: Criação </h4>
+  <h4 id="requisito4">Requisito 4: Criação do endpoint POST `/user` </h4>
   
     4. Validar :
       4.1. 
       4.2. 
       4.3. 
 
-  <h4 id="requisito5">Requisito 5: Criação </h4>
+  <h4 id="requisito5">Requisito 5: Criação do endpoint GET `/user` </h4>
   
     5. Criar um :
       5.1. 
@@ -179,7 +177,7 @@
       5.10. 
 
 
-  <h4 id="requisito6">Requisito 6: Criação </h4>
+  <h4 id="requisito6">Requisito 6: Criação do endpoint GET `/user/:id` </h4>
   
     6. Criar um :
       6.1. 
@@ -188,14 +186,14 @@
       6.4. 
       6.5. 
 
-  <h4 id="requisito7">Requisito 7: Criação </h4>
+  <h4 id="requisito7">Requisito 7: Criação do model de categoria </h4>
   
     7. Criar um :
       7.1. 
       7.2. 
       7.3. 
 
-  <h4 id="requisito8">Requisito 8: Criação </h4>
+  <h4 id="requisito8">Requisito 8: Criação do endpoint POST `/categories` </h4>
   
     8. Criar em :
       8.1. 
@@ -204,62 +202,49 @@
       8.4. 
       8.5. 
 
-  <h4 id="requisito9">Requisito 9: Criação </h4>
+  <h4 id="requisito9">Requisito 9: Criação do endpoint GET `/categories` </h4>
   
     9. 
 
-  <h4 id="requisito10">Requisito 10: </h4>
+  <h4 id="requisito10">Requisito 10: Criação do model de blogpost </h4>
   
     10. 
 
-  <h4 id="requisito11">Requisito 11: </h4>
+  <h4 id="requisito11">Requisito 11: Criação do model de postcategory </h4>
   
     11. 
   
-  <h4 id="requisito12">Requisito 12: </h4>
+  <h4 id="requisito12">Requisito 12: Criação do endpoint POST `/post` </h4>
   
     12. 
   
-  <h4 id="requisito13">Requisito 13: </h4>
+  <h4 id="requisito13">Requisito 13: Criação do endpoint GET `/post` </h4>
   
     13. 
   
-  <h4 id="requisito14">Requisito 14: </h4>
+  <h4 id="requisito14">Requisito 14: Criação do endpoint GET `/post/:id` </h4>
   
     14. 
   
-  <h4 id="requisito15">Requisito 15: </h4>
+  <h4 id="requisito15">Requisito 15: Criação do endpoint PUT `/post/:id` </h4>
   
     15. 
 
-  <h4 id="requisito16">Requisito 16: </h4>
+  <h4 id="requisito16">Requisito 16: Criação do endpoint DELETE `/post/:id` </h4>
   
     16. 
 
-  <h4 id="requisito17">Requisito 17: </h4>
+  <h4 id="requisito17">Requisito 17: Criação do endpoint DELETE `/user/me` </h4>
   
     17. 
   
-  <h4 id="requisito18">Requisito 18: </h4>
+  <h4 id="requisito18">Requisito 18: Criação do endpoint GET `/post/search` </h4>
   
     18. 
-  
-  <h4 id="requisito19">Requisito 19: </h4>
-  
-    19. 
 
 </details>
 <br />
 
-<details open="open">
-  <summary></summary>
-
-  <h4 id="requisito20">Requisito 20: </h4>
-  
-    20. 
-
-</details>
-<br />
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
