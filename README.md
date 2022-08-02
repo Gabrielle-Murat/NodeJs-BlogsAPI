@@ -69,12 +69,12 @@
   <br />
    <a href="https://nodemon.io/" target="_blank"><img src="gif/nodemon-logo.png" alt="Nodemon Logo" width="9%"></a>
   <a href="https://nodejs.org/en/" target="_blank"><img src="gif/nodejs-logo.png" alt="NodeJs Logo" width="10.5%"></a>
-  <a href="" target="_blank"><img src="gif/sequelize-logo2.png" alt="Sequelize Logo" width="8.9%"></a>
+  <a href="https://sequelize.org/" target="_blank"><img src="gif/sequelize-logo2.png" alt="Sequelize Logo" width="8.9%"></a>
   <br />
   <a href="https://expressjs.com/" target="_blank"><img src="gif/express-logo.png" alt="Express Logo" width="20.3%"></a>
   <a href="https://joi.dev/" target="_blank"><img src="gif/joi-logo.png" alt="Joi Logo" width="5.5%"></a>
   <a href="https://www.restapitutorial.com/" target="_blank"><img src="gif/rest.png" alt="Rest Logo" width="7.4%"></a>
-  <a href="" target="_blank"><img src="gif/jwt-logo.png" alt="JWT Logo" width="7.5%"></a>
+  <a href="https://jwt.io/" target="_blank"><img src="gif/jwt-logo.png" alt="JWT Logo" width="7.5%"></a>
 </p>
 
 <p align="center">
