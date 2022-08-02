@@ -3,7 +3,7 @@
 <h1 align="center">Projeto NodeJs - Blogs API</h1>
 
 <p align="center"> 
-  <img src="gif/node-sequelize.png" alt="Node e Sequelize imagem" width="37%">
+  <img src="gif/node-sequelize.png" alt="Node e Sequelize imagem" width="32%">
 </p>
 
 <p align="center">
@@ -87,15 +87,15 @@
 
 <details>
   <summary>Descrição</summary><br />
-  Tem-se um arquivo (` `) que foi utilizado como base para fazer  .<br /><br />
+  Foi desenvolvida uma API e um banco de dados para a produção de conteúdo para um blog.<br /><br />
   
   Neste projeto eu realizei:
   
   <ol>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>Desenvolvimento de endpoints conectados ao db seguindo os princípios REST</li>
+    <li>Conexão entre um usuário e login para realização de postagens</li>
+    <li>Conexão entre posts e categorias no db</li>
+    <li>Configuração e manipulação do jwt como ferramenta de autenticação de tokens</li>
   </ol><br />
 
   Durante o desenvolvimento foi utilizado Docker.<br />  
@@ -108,7 +108,7 @@
 <h2 id="instruções"> :scroll: Instruções</h2>
 
 1. Clone o repositório
-  * `git clone git@github.com:Gabrielle-Murat/Projeto.git`
+  * `git clone git@github.com:Gabrielle-Murat/NodeJs-BlogsAPI.git`
   * Entre na pasta do repositório que você acabou de clonar;
 <br />
 
@@ -116,12 +116,16 @@
   * `npm install`
 <br />
 
-3. Como restaurar o arquivo ``:
-  * Execute o comando: `npm run restore`
+3. Utilizando Docker:
+  * Rode os serviços `node` e `db` com o comando `docker-compose up -d --build` (adapte a porta padrão, se necessário),
+  * Com isso, serão inicializados dois containers: `blogs_api` e `blogs_api_db`
+  * Use o comando `docker exec -it blogs_api bash` (para acessar o terminal interativo do container `blogs_api`),
+  * Instale as dependências com `npm install`
+  * Todos os comandos disponíveis no `package.json` agora podem ser executados no terminal do container
 <br />
   
 4. Para iniciar o servidor em modo de desenvolvimento:
-  * Execute o comando: `npm run dev`
+  * Execute o comando: `npm run debug`
 <br />
     
 <p align="center">
@@ -263,5 +267,5 @@
 
 <h2 id="créditos"> 💳 Créditos</h2>
 
-<p align="center">Arquivo de  ( ) e docker compose (docker-compose.yml) fornecidos pela Trybe.</p>
+<p align="center">Arquivo de caminhos para o sequelize (.sequelizerc), docker compose (docker-compose.yml), dockerfile (Dockerfile), o arquivo (config.js) contido no caminho `src>database>config` e os seeders para popular o db contidos no caminho `src>database>seeders`, foram fornecidos pela Trybe.</p>
 <p align="center"><a href="https://www.betrybe.com/" target="_blank"><img src="gif/trybe-logo.jpeg" alt="Trybe Logo" width="15%"></a></p>
