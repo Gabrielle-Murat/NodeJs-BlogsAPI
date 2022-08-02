@@ -1,9 +1,9 @@
 <!-- WIP -->
 
-<h1 align="center">Projeto</h1>
+<h1 align="center">Projeto NodeJs - Blogs API</h1>
 
 <p align="center"> 
-  <img src="gif/nome.jpg" alt="Nome Logo" width="37%">
+  <img src="gif/node-sequelize.png" alt="Node e Sequelize imagem" width="37%">
 </p>
 
 <p align="center">
@@ -51,7 +51,11 @@
 
 <h2 id="sobre"> :pencil: Sobre o projeto </h2>
 
-  <p align="center">Projeto desenvolvido durante a formação de BackEnd na Trybe com o intuito de consolidar o aprendizado de  .</p>
+  <p align="center">Projeto desenvolvido durante a formação de BackEnd na Trybe com o intuito de consolidar o aprendizado de NodeJs utilizando o framework Express, Sequelize como ferramenta ORM e JWT para criação e autenticação de token. Foram seguidos os padrões arquiteturais MSC e REST.
+  <br /><br />
+  <img src="gif/sequelize.png" alt="Funcionamento do Sequelize" width="55%" />
+  <img src="gif/jwt.png" alt="Funcionamento do JWT" width="25%" />
+</p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" />
@@ -65,11 +69,14 @@
   <a href="https://github.com/" target="_blank"><img src="gif/github-logo.jpg" alt="gitHub Logo" width="15%"></a>
   <a href="https://www.mysql.com/" target="_blank"><img src="gif/mysql-logo.png" alt="MySQL Logo" width="22%"></a>
   <br />
+   <a href="https://nodemon.io/" target="_blank"><img src="gif/nodemon-logo.png" alt="Nodemon Logo" width="9%"></a>
   <a href="https://nodejs.org/en/" target="_blank"><img src="gif/nodejs-logo.png" alt="NodeJs Logo" width="10.5%"></a>
-  <a href="https://nodemon.io/" target="_blank"><img src="gif/nodemon-logo.png" alt="Nodemon Logo" width="9%"></a>
+  <a href="" target="_blank"><img src="gif/sequelize-logo2.png" alt="Sequelize Logo" width="8.9%"></a>
   <br />
-  <a href="https://expressjs.com/" target="_blank"><img src="gif/express-logo.png" alt="Express Logo" width="20%"></a>
+  <a href="https://expressjs.com/" target="_blank"><img src="gif/express-logo.png" alt="Express Logo" width="20.3%"></a>
   <a href="https://joi.dev/" target="_blank"><img src="gif/joi-logo.png" alt="Joi Logo" width="5.5%"></a>
+  <a href="https://www.restapitutorial.com/" target="_blank"><img src="gif/rest.png" alt="Rest Logo" width="7.4%"></a>
+  <a href="" target="_blank"><img src="gif/jwt-logo.png" alt="JWT Logo" width="7.5%"></a>
 </p>
 
 <p align="center">
